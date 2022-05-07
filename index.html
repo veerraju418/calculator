@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+	<div class="box">
+		<center>
+		<form name="cal">
+			<input class="display" type="text" name="data" readonly>
+			<br>
+			<br>
+			<br>
+			<span class="cl" onclick="cal.data.value=''">C</span>
+			<span onclick="cal.data.value+='-'">-</span>
+			<span onclick="cal.data.value+='*'">*</span>
+			<span onclick="cal.data.value+='+'">+</span>
+			<br>
+			<br>
+			<br>
+			<span onclick="cal.data.value+='9'">9</span>
+			<span onclick="cal.data.value+='8'">8</span>
+			<span onclick="cal.data.value+='7'">7</span>
+			<span onclick="cal.data.value+='/'">/</span>
+			<br>
+			<br>
+			<br>
+			<span onclick="cal.data.value+='6'">6</span>
+			<span onclick="cal.data.value+='5'">5</span>
+			<span onclick="cal.data.value+='4'">4</span>
+			<span onclick="cal.data.value+='0'">0</span>
+			<br>
+			<br>
+			<br>
+			<span onclick="cal.data.value+='3'">3</span>
+			<span onclick="cal.data.value+='2'">2</span>
+			<span onclick="cal.data.value+='1'">1</span>
+			
+			<span class="equal" onclick="cal.data.value=eval(cal.data.value)">=</span>
+		</form>
+	</center>
+	</div>
+
+
+</body>
+</html>
